@@ -1,0 +1,7 @@
+-ng-app body of index.html, all child elements are in Angular app
+
+
+
+-routes set up in app.js file
+-each view is a new html page?
+-
