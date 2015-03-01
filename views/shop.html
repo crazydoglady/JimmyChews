@@ -1,14 +1,18 @@
+
 <ul class="col-md-12">
-  <li ng-repeat="product in mainCtrl.products" class="col-md-3">
-    <p>{{product.name}}</p>
-    <p>{{product.category}}</p>
-    <p>{{product.price}}</p>
+  <li ng-repeat="product in mainCtrl.products" class="col-md-2">
+    <img ng-src="{{product.photo}}">
+    <p class="listingInfo"><h4>{{product.name}}</h4></p>
+    <p class="listingInfo"><h4>{{product.category}}</h4></p>
+    <p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
+    <a href=""<i class="fa fa-paw"></i>  BUY</a>
   </li>
 </ul>
-<form ng-submit="mainCtrl.addProduct(newItem)">
+<!-- <form ng-submit="mainCtrl.addProduct(newItem)">
   <input type="text" ng-model="newProduct.name" placeholder="Name">
   <input type="text" ng-model="newProduct.category" placeholder="Category">
   <input type="text" ng-model="newProduct.price" placeholder="Price">
-<!--   <input type="text" ng-model="newProduct.photo" placeholder="Image"> -->
+<input type="text" ng-model="newProduct.photo" placeholder="Image">
   <button type="submit">Add Item</button>
 </form>
+ -->

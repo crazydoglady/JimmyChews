@@ -1,17 +1,18 @@
 <ul class="col-md-12">
-  <li ng-repeat="product in mainCtrl.products" class="col-md-3">
-    <p>{{product.photo}}</p>
-    <p>Item: {{product.name}}</p>
-    <p>Category: {{product.category}}</p>
-    <p>Price: {{product.price}}</p>
-    <button>Edit</button>
-    <button>Delete</button>
+  <li ng-repeat="product in mainCtrl.products" class="col-md-2">
+    <img ng-src="{{product.photo}}">
+    <p class="listingInfo"><h4>{{product.name}}</h4></p>
+    <p class="listingInfo"><h4>{{product.category}}</h4></p>
+    <p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
+    <button ng-click="mainCtrl.editProduct(item)">Edit</button>
+    <button ng-click="mainCtrl.deleteProduct(item)">Delete</button>
   </li>
+  <form ng-submit="mainCtrl.addProduct(newProduct)" class="col-md-2">
+    <input type="url" ng-model="newProduct.photo" placeholder="Photo Url">
+    <input type="text" ng-model="newProduct.name" placeholder="Name">
+    <input type="text" ng-model="newProduct.category" placeholder="Category">
+    <input type="text" ng-model="newProduct.price" placeholder="Price">
+  <!--   <input type="text" ng-model="newProduct.photo" placeholder="Image"> -->
+    <button type="submit">Add Item</button>
+  </form>
 </ul>
-<form ng-submit="mainCtrl.addProduct(newItem)">
-  <input type="text" ng-model="newProduct.name" placeholder="Name">
-  <input type="text" ng-model="newProduct.category" placeholder="Category">
-  <input type="text" ng-model="newProduct.price" placeholder="Price">
-<!--   <input type="text" ng-model="newProduct.photo" placeholder="Image"> -->
-  <button type="submit">Add Item</button>
-</form>

@@ -10,8 +10,13 @@
       templateUrl: 'views/main.html',
       controller: 'MainController as mainCtrl'
     })//end / route
+    .when('/shop', {
+      templateUrl: 'views/shop.html',
+      controller: 'MainController as mainCtrl'
+    })
     .when('/admin', {
-      templateUrl: 'views/admin.html'
+      templateUrl: 'views/admin.html',
+      controller: 'MainController as mainCtrl'
     })//end / admin route
     .otherwise({
       redirectTo: '/not_found'
