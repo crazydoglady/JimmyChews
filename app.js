@@ -18,7 +18,11 @@
       templateUrl: 'views/admin.html',
       controller: 'MainController as mainCtrl'
     })//end / admin route
-    .otherwise({
+    .when('/not_found', {
+      templateUrl: 'views/not_found.html',
+      controller: 'MainController as mainCtrl'
+    })
+    .otherwise ({
       redirectTo: '/not_found'
     })//end otherwise, this is equivalent to if/else statement in vanilla javascript
   });//end config

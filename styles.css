@@ -9,21 +9,34 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: linear-gradient( rgba(157,155,156,0.7), rgba(157,155,156,0.7)), url('assets/paws2.jpg'); */ }
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/paws2.jpg"); }
 
-/* aside{
-  float: left;
-  display: inline-block;
-  height: 100%;
-} */
-h1 {
-  font-family: helvetica;
-  color: black;
+header {
+  height: 100px;
+  background: #d3ab0a; }
+
+#brand {
   text-align: center; }
 
 h2 {
+  margin: 50px 0 0 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: black; }
+
+a, .fa-paw {
+  text-decoration: none;
+  color: black; }
+  a:hover, .fa-paw:hover {
+    color: #d3ab0a;
+    text-shadow: 1px black; }
+
+h3 {
   text-align: left;
-  padding: 0 20px 0 0; }
+  margin: 0 5% 0 0;
+  padding: 0 20px 0 0;
+  display: inline-block; }
 
 h4 {
   color: black;
@@ -31,9 +44,10 @@ h4 {
   font-family: helvetica; }
 
 .photoscroll {
-  display: inline-block;
+  display: block;
   height: 35em;
-  margin: 2% 2% 5% 2%;
+  margin: 2% 25% 1% 25%;
+  border: 3px solid black;
   background-size: 100%;
   background-repeat: no-repeat;
   -webkit-animation: gallery 72s 1s infinite;
@@ -41,19 +55,30 @@ h4 {
   -o-animation: gallery 72s 1s infinite;
   animation: gallery 72s 1s infinite; }
 
+.redirect {
+  margin: 0 25% 0 32%; }
+
 ul {
   list-style-type: none; }
   ul li, ul form input, form ul input {
+    background: grey;
     display: inline-block;
-    background: white;
-    margin: 1% 0 0 12%; }
+    margin: 1% 0 0 12%;
+    border-radius: 10px; }
     ul li img, ul form input img, form ul input img {
       height: 160px;
       width: 100%;
-      margin: 2% 0 0 0; }
+      margin: 3% 0 0 0;
+      border-radius: 10px; }
 
 .listingInfo {
   height: 20px; }
+
+#lost {
+  height: 500px; }
+
+#error {
+  margin: 0 0 0 39%; }
 
 @-webkit-keyframes gallery {
   0% {
