@@ -1,20 +1,8 @@
 (function () {
   "use strict";
-  angular.module('pawsApp')
+  angular.module('pawsApp') //parent element, all of application is affected
   .factory('ProductService', function() {
     var products = [
-    {
-      photo: "https://www.nuvetlabs.com/order/images/pictures/leash%20big%20blue.jpg",
-      name: "Blue Leash",
-      category: "accessories",
-      price: "85"
-    },
-    {
-      photo: "https://s-media-cache-ak0.pinimg.com/236x/1a/22/08/1a220839f53a760ff6e34d64ba60a52a.jpg",
-      name: "Hair Ribbon",
-      category: "accessories",
-      price: "75"
-    },
     {
       photo: "http://www.thefastertimes.com/oddjobs/files/2010/03/dog-food.jpg",
       name: "Kobe Beef Kibble",
@@ -121,18 +109,22 @@
       products.push(item); //adds new item info to array of products^^
     };
     var deleteProduct = function (item) {
-      console.log("delete triggered");
-      products.splice(this, 1);
-
-    }
-    // var editProduct = function (item) {
+    console.log("delete triggered");
+    var idx = products.indexOf(item);
+    products.splice(idx, 1);
     //
+    // };
+    //  var editProduct = function (item) {
+    //    console.log('edit triggered');
+    //
+    //    products.splice(this, 1, item)
+     }
 
     return {
       getItems: getProducts, //left is public, right is only usable for factory/service function
       addItem: addProduct,
       deleteItem: deleteProduct,
-      // editItem: editProduct,
+      //editItem: editProduct,
     };
 
   });

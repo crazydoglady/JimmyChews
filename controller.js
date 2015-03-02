@@ -6,20 +6,19 @@
 
       mainCtrl.products = ProductService.getItems();
 
-      mainCtrl.alertMe = function () {
-        alert("Hi form mainCtrl");
-      };
-
       mainCtrl.addProduct = function (newItem) {
         ProductService.addItem(newItem);
         $scope.newProduct = {};
       }
-      mainCtrl.deleteProduct = function (product) {
-      ProductService.deleteItem(product);
+      mainCtrl.deleteProduct = function (item) {
+      ProductService.deleteItem(item);
+      $scope.newProduct = {};
        };
-      // mainCtrl.editProduct = function (newItem) {
-      //   ProductsPageService.editItem(Item)
-      //   $scope.editItem ={};
+      // mainCtrl.editProduct = function (product) {
+      // ProductService.editItem(product)
+      //   var editOneProduct = product;
+      //   console.log(editProduct);
+      //   $scope.newProduct = {};
       // }
     });
 
