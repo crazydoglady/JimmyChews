@@ -1,0 +1,10 @@
+  <ul>
+    <li ng-repeat="item in purchases">
+      <h2>Your Cart: </h2>
+      <h5>name{{item.name}}</h5><i class="fa fa-times" ng-click=""></i>
+      <h6>price{{item.price | currency }}</h5>
+      <h5>quantity{{item.quantity}}</h5>
+    </li>
+    <h2>Items= purchases.length </h2>
+
+  </ul>

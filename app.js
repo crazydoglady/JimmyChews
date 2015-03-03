@@ -22,6 +22,10 @@
       templateUrl: 'views/not_found.html',
       controller: 'MainController as mainCtrl'
     })
+    .when('/cart', {
+      templateUrl:'views/cart.html',
+      controller: 'CartController as cartCtrl'
+    })
     .otherwise ({
       redirectTo: '/not_found'
     })//end otherwise, this is equivalent to if/else statement in vanilla javascript

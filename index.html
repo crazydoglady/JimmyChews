@@ -13,21 +13,24 @@
   <header>
     <h2><i class="fa fa-paw"></i> Jimmy Chew & Vera Wag <i class="fa fa-paw"></i>
     <h4>a designer barktique</h4>
-    <aside class="col-md-2"></aside>
   </header>
-  <div class="container">
-
-
-  </div>
 
   <ng-view></ng-view>
 
-
+<nav>
+  <p class="col-md-12 bottom">
+    <a href="#/shop">Shop</a>
+    <a href="#/cart">Cart</a>
+    <a href="#/admin">Store Admin</a>
+  </p>
+</nav>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="app.js"></script>
-<script src="controller.js"></script>
-<script src="service.js"></script>
+<script src="maincontroller.js"></script>
+<script src="productService.js"></script>
+<script src="cartController.js"></script>
+<script> src="purchaseService.js"</script>
 </body>
 </html>

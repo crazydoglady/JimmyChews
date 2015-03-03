@@ -1,13 +1,21 @@
-
-<ul class="col-md-12">
+<ul class="col-md-11">
   <li ng-repeat="product in mainCtrl.products" class="col-md-2">
     <img ng-src="{{product.photo}}">
     <p class="listingInfo"><h4>{{product.name}}</h4></p>
     <p class="listingInfo"><h4>{{product.category}}</h4></p>
     <p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
-    <a href=""<i class="fa fa-paw"></i>  BUY</a>
+    <select class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    <a href=""<i class="fa fa-shopping-cart"></i>  ADD TO CART</a>
   </li>
 </ul>
+
+
 <!-- <form ng-submit="mainCtrl.addProduct(newItem)">
   <input type="text" ng-model="newProduct.name" placeholder="Name">
   <input type="text" ng-model="newProduct.category" placeholder="Category">
