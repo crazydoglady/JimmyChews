@@ -22,6 +22,9 @@
       templateUrl: 'views/edit.html',
       controller: 'MainController as mainCtrl'
     })
+    .when('/faq', {
+      templateUrl:'views/customers.html'
+    })
     .when('/customers', {
       templateUrl:'views/customers.html'
     })

@@ -59,7 +59,7 @@
     },
     {
       photo: "http://incrediblethings.com/wp-content/uploads/2009/07/22k-Gold-Thread-Pet-Mattress.jpg",
-      name: "22k Gold Threaded Dog Bed",
+      name: "22k Gold Dog Bed",
       category: "Accessories",
       price: "3000"
     },

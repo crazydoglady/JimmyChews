@@ -1,10 +1,13 @@
-  <ul>
-    <li ng-repeat="item in cart.purchases">
-        <p class="listingInfo"><h4>{{item.name}}</h4></p>
-        <p class="listingInfo"><h4>{{item.category}}</h4></p>
-        <p class="listingInfo"><h4>{{item.price | currency}}</h4></p>
-
+  <ul ng-controller="CartController as cart">
+    <li ng-repeat="purchase in cartCtrl.purchases">
+        <p><h5>{{purchase.name}}</h5></p>
+        <p><h5>{{purchase.category}}</h5></p>
+        <p><h5>{{purchase.price | currency}}</h5></p>
+        <button ng-click="cartCtrl.removePurchase(purchase)"><i class="fa fa-times"></i>Delete</button>
     </li>
-    <h3>Order Total: {{}}</h3>
-    <h3>Items in Cart: {{//length of array}}</h3>
+    <li>
+      <h3>Order Total: {{}}</h3>
+      <h3>Items in Cart:{{cartCtrl.purchases.length}}</h3>
+    </li>
+
   </ul>
