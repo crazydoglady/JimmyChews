@@ -6,7 +6,7 @@
 
       mainCtrl.products = ProductService.getItems();
 
-      mainCtrl.singleItem = ProductService.getItem($routeParams.itemIndex);
+      mainCtrl.singleItem = ProductService.getItem($routeParams.itemId);
 
       mainCtrl.addProduct = function (newItem) {
         ProductService.addItem(newItem);
@@ -18,7 +18,7 @@
        };
        mainCtrl.editItem = function (item) {
          ProductService.editItem(item, $routeParams.itemIndex);
-
+         $location.path('/admin')
        }
       // mainCtrl.editProduct = function (product) {
       // ProductService.editItem(product)

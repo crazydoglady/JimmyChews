@@ -6,7 +6,7 @@
     <h4>{{product.name}}</h4>
     <h4>{{product.category}}</h4>
     <h4>{{product.price | currency }}</h4>
-    <button><a href="#/edit"><i class="fa fa-pencil"></i>Edit</a></button>
+    <button><a href="#/edit/{{$index}}"><i class="fa fa-pencil"></i>Edit</a></button>
     <button ng-click="mainCtrl.deleteProduct(product)"><i class="fa fa-times"></i>Delete</button>
 
 </li>

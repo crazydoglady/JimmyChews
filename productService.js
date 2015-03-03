@@ -41,7 +41,7 @@
     },
     {
       photo: "http://www.blackshoppingchannel.net/xcart/images/P/LV%20Big%20Dog%20full%20size.jpg",
-      name: "Louis Vuitton Dog jacket",
+      name: "Louis Vuitton Jacket",
       category: "clothing",
       price: "1500"
     },
@@ -121,17 +121,21 @@
   };
   var getSingleItem = function (index) {
     return products[index];
+    console.log("in services");
   };
-  var editItem = function (hero, index) {
-    products[index] = item;
+  var editItem = function (item) {
+    var idx = products.indexOf(item);
+    console.log(item);
+    console.log(products[idx]);
+    products[idx] = item;
   }
 
     return {
       getItems: getProducts, //left is public, right is only usable for factory/service function
       addItem: addProduct,
       deleteItem: deleteProduct,
-      getItem : getSingleItem //right is defined in service, left is for use elsewhere in app
-      //editItem: editProduct,
+      getItem : getSingleItem, //right is defined in service, left is for use elsewhere in app
+      editItem: editItem
     };
 
   });
