@@ -13,7 +13,8 @@ body {
 
 header {
   height: 125px;
-  background: #d3ab0a; }
+  background: #d3ab0a;
+  border-bottom: 5px solid grey; }
 
 #brand {
   text-align: center; }
@@ -50,7 +51,7 @@ h4 {
   height: 35em;
   margin: 1% 25% 1% 25%;
   border: 3px solid black;
-  background-size: 100%;
+  background-size: cover;
   background-height: 100%;
   background-repeat: no-repeat;
   -webkit-animation: gallery 72s 1s infinite;
@@ -59,11 +60,13 @@ h4 {
   animation: gallery 72s 1s infinite; }
 
 .redirect {
+  height: 45px;
   background: black;
   color: white; }
   .redirect h3 {
     margin: 0 0 0 19%; }
   .redirect a, .redirect .fa-paw {
+    padding: 5% 0 0 0;
     color: white; }
     .redirect a:hover, .redirect .fa-paw:hover {
       color: #d3ab0a; }
@@ -107,6 +110,11 @@ form input {
 
 .addNew {
   background: green; }
+
+.client {
+  border: 1px solid blue; }
+  .client img {
+    height: 350px; }
 
 @-webkit-keyframes gallery {
   0% {

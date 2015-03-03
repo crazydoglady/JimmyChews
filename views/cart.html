@@ -1,9 +1,10 @@
   <ul>
     <li ng-repeat="item in cart.purchases">
-        <p class="listingInfo"><h4>{{product.name}}</h4></p>
-        <p class="listingInfo"><h4>{{product.category}}</h4></p>
-        <p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
-    </li>
-    <h2>Items in Cart: {{cart.purchases.length}}</h2>
+        <p class="listingInfo"><h4>{{item.name}}</h4></p>
+        <p class="listingInfo"><h4>{{item.category}}</h4></p>
+        <p class="listingInfo"><h4>{{item.price | currency}}</h4></p>
 
+    </li>
+    <h3>Order Total: {{}}</h3>
+    <h3>Items in Cart: {{//length of array}}</h3>
   </ul>

@@ -16,8 +16,7 @@
      console.log("delete triggered");
      var idx = products.indexOf(item); //angular tracks index automatically
        purchases.splice(index, 1);
-    };
-
+    }
 
     return {
     //public  : private

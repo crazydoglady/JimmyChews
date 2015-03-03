@@ -22,6 +22,9 @@
       templateUrl: 'views/edit.html',
       controller: 'MainController as mainCtrl'
     })
+    .when('/customers', {
+      templateUrl:'views/customers.html'
+    })
     .when('/not_found', {
       templateUrl: 'views/not_found.html',
       controller: 'MainController as mainCtrl'
