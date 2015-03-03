@@ -1,4 +1,11 @@
-<ul class="col-md-11">
+<nav class="redirect col-md-12">
+<h3><a href="#/"><i class="fa fa-home"></i>HOME</a></h3>
+<h3><a href="#/cart"><i class="fa fa-shopping-cart"></i>YOUR CART</a></h3>
+<h3><a href="#/admin"><i class="fa fa-unlock"></i>ADMIN</a></h3>
+</nav>
+
+<button><a href="#/cart"></a>View Your Cart</button>
+<ul class="col-md-11" ng-controller="CartController as cart">
   <li ng-repeat="product in mainCtrl.products" class="col-md-2">
     <img ng-src="{{product.photo}}">
     <p class="listingInfo"><h4>{{product.name}}</h4></p>
@@ -11,7 +18,7 @@
       <option>4</option>
       <option>5</option>
     </select>
-    <a href=""<i class="fa fa-shopping-cart"></i>  ADD TO CART</a>
+    <button ng-click="cart.addPurchase(product)"><i class="fa fa-shopping-cart"></i>  ADD TO CART</button>
   </li>
 </ul>
 
