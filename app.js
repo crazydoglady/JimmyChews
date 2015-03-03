@@ -18,6 +18,10 @@
       templateUrl: 'views/admin.html',
       controller: 'MainController as mainCtrl'
     })//end / admin route
+    .when('/edit', {
+      templateUrl: 'views/edit.html',
+      controller: 'MainController as mainCtrl'
+    })
     .when('/not_found', {
       templateUrl: 'views/not_found.html',
       controller: 'MainController as mainCtrl'

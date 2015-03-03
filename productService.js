@@ -118,12 +118,19 @@
     //    console.log('edit triggered');
     //
     //    products.splice(this, 1, item)
-     }
+  };
+  var getSingleItem = function (index) {
+    return products[index];
+  };
+  var editItem = function (hero, index) {
+    products[index] = item;
+  }
 
     return {
       getItems: getProducts, //left is public, right is only usable for factory/service function
       addItem: addProduct,
       deleteItem: deleteProduct,
+      getItem : getSingleItem //right is defined in service, left is for use elsewhere in app
       //editItem: editProduct,
     };
 
