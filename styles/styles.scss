@@ -78,6 +78,7 @@ h4 {
     margin: 0 0 0 19%;
   }
   a{
+    text-decoration: none;
     padding: 5% 0 0 0;
     color: white;
     &:hover {
@@ -88,9 +89,9 @@ h4 {
 ul{
   list-style-type: none;
   li{
-    background: grey;
+    background: #e5e4e0;
     display: inline-block;
-    margin: 1% 0 0 12%;
+    margin: 1% 0 0 3%;
     border-radius: 10px;
   img{
     height: 160px;

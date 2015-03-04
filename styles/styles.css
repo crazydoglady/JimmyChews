@@ -65,6 +65,7 @@ h4 {
   .redirect h3 {
     margin: 0 0 0 19%; }
   .redirect a, .redirect .fa-paw {
+    text-decoration: none;
     padding: 5% 0 0 0;
     color: white; }
     .redirect a:hover, .redirect .fa-paw:hover {
@@ -73,9 +74,9 @@ h4 {
 ul {
   list-style-type: none; }
   ul li, ul form input, form ul input {
-    background: grey;
+    background: #e5e4e0;
     display: inline-block;
-    margin: 1% 0 0 12%;
+    margin: 1% 0 0 3%;
     border-radius: 10px; }
     ul li img, ul form input img, form ul input img {
       height: 160px;
