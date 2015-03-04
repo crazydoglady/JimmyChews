@@ -6,7 +6,7 @@
 
       cartCtrl.purchases = PurchaseService.getItems();
 
-      cartCtrl.total=PurchaseService.getTotal();
+      //cartCtrl.total=PurchaseService.getTotal();
 
       cartCtrl.addPurchase = function (newItem) {
         console.log("add to cart triggered", newItem)
@@ -14,7 +14,7 @@
       }
       cartCtrl.removePurchase = function (item) {
       PurchaseService.removeItem(item);
-      };
+      }
 
       // mainCtrl.editProduct = function (product) {
       // ProductService.editItem(product)

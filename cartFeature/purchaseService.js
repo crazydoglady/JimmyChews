@@ -19,16 +19,13 @@
        purchases.splice(index, 1);
     }
 
-    var getTotal = function() {
-    
-    }
 
     return {
     //public  : private
       getItems: getPurchases,
       addItem: addPurchase,
       removeItem: removeProduct,
-      getPurchaseTotal: getTotal
+      // getPurchaseTotal: getTotal
     };
 
   });
