@@ -1,8 +1,16 @@
 
-<form ng-submit="mainCtrl.editItem(mainCtrl.singleItem)">
+<form ng-submit="mainCtrl.editItem(mainCtrl.singleItem._id)">
   <input type="url"  ng-model="mainCtrl.singleItem.photo">
   <input type="text" ng-model="mainCtrl.singleItem.name">
-  <input type="text" ng-model="mainCtrl.singleItem.category">
+  <select class="form-control" ng-model="mainCtrl.singleItem.category">
+    <option>Amuse + Delight</option>
+    <option>Feast + Treat</option>
+    <option>Adorn + Enhance</option>
+    <option>Fashion + Attire</option>
+    <option>Accoutrements</option>
+  </select>
   <input type="text" ng-model="mainCtrl.singleItem.price">
   <button ng-click="">Submit</button>
 </form>
+
+<!-- all of this is still within the same function, so there is no need to re-render like in other techniques. -->

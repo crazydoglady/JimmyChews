@@ -18,7 +18,7 @@
       templateUrl: 'views/admin.html',
       controller: 'MainController as mainCtrl'
     })//end / admin route
-    .when('/edit/:itemId', {
+    .when('/edit/:_id', {
       templateUrl: 'views/edit.html',
       controller: 'MainController as mainCtrl'
     })

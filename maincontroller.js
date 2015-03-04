@@ -1,23 +1,29 @@
 (function () {
   "use strict";
   angular.module('pawsApp')
-    .controller('MainController', function ( ProductService, $scope, $routeParams, $location) {
+    .controller('MainController', function (ProductService, $location, $routeParams) {
       var mainCtrl = this;
 
-      mainCtrl.products = ProductService.getItems();
+      ProductService.getItems().success(function(data){
+        mainCtrl.products = data;
+      });
+      ProductService.getItem($routeParams.itemId).success(function(data){
+        mainCtrl.singleItem = data;
+      });
 
-      mainCtrl.singleItem = ProductService.getItem($routeParams.itemId);
+      // ProductService.getItem();
+      //local data methodmainCtrl.singleItem = ProductService.getItem($routeParams.itemId);
 
       mainCtrl.addProduct = function (newItem) {
         ProductService.addItem(newItem);
-        $scope.newProduct = {};
+        //$scope.newProduct = {};
       }
       mainCtrl.deleteProduct = function (item) {
       ProductService.deleteItem(item);
-      $scope.newProduct = {};
+      //$scope.newProduct = {};
        };
        mainCtrl.editItem = function (item) {
-         ProductService.editItem(item, $routeParams.itemIndex);
+         ProductService.editProduct(item, $routeParams.itemId);
          $location.path('/admin')
        }
       // mainCtrl.editProduct = function (product) {
