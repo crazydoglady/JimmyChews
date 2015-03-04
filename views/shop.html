@@ -10,7 +10,8 @@
     <p class="listingInfo"><h4>{{product.name}}</h4></p>
     <p class="listingInfo"><h4>{{product.category}}</h4></p>
     <p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
-    <button ng-click="cart.addPurchase(product)"><i class="fa fa-shopping-cart"></i>  ADD TO CART</button>
+    <button><a href="#/detail/{{product._id}}"><i class="fa fa-chevron-right"></i>DETAILS</button>
+    <button><a href="#/cart" ng-click="cart.addPurchase(product)"><i class="fa fa-shopping-cart"></i>  ADD TO CART</a></button>
   </li>
 </ul>
 

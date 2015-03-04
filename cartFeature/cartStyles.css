@@ -1,0 +1,25 @@
+body {
+  background: white; }
+
+header {
+  background: white; }
+
+aside {
+  height: 300px;
+  position: absolute;
+  margin: 1% 0 0 70%; }
+  aside h3 {
+    display: block; }
+
+.redirect {
+  background: grey;
+  color: black; }
+  .redirect a {
+    color: black; }
+    .redirect a:hover {
+      color: red; }
+
+li {
+  border: 1px solid black; }
+
+/*# sourceMappingURL=cartStyles.css.map */

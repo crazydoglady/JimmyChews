@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="cartFeature/cartStyles.css">
+  <ul ng-app="cart" ng-controller="CartController as cart" class="col-md-12">
+    <li ng-repeat="purchase in cartCtrl.purchases" class="col-md-2">
+        <p><h5>{{purchase.name}}</h5></p>
+        <p><h5>{{purchase.category}}</h5></p>
+        <p><h5>{{purchase.price | currency}}</h5></p>
+        <button ng-click="cartCtrl.removePurchase(purchase)"><i class="fa fa-times"></i>Delete</button>
+    </li>
+    <aside class="col-md-4">
+      <p><h3>Order Total: {{cartCtrl.total | currency}}</h3></p>
+      <p><h3>Items in Cart:{{cartCtrl.purchases.length}}</h3></p>
+    </aside>
+
+  </ul>
+  <h2>Thank you for shopping with us.</h2>

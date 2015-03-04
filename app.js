@@ -2,7 +2,8 @@
   "use strict";
 
   angular.module('pawsApp', [
-    'ngRoute'
+    'ngRoute',
+    'cart'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -18,6 +19,10 @@
       templateUrl: 'views/admin.html',
       controller: 'MainController as mainCtrl'
     })//end / admin route
+    .when('/detail/:_id', {
+      templateUrl: 'views/detail.html',
+      controller: 'MainController as mainCtrl'
+    })
     .when('/edit/:_id', {
       templateUrl: 'views/edit.html',
       controller: 'MainController as mainCtrl'
@@ -31,10 +36,6 @@
     .when('/not_found', {
       templateUrl: 'views/not_found.html',
       controller: 'MainController as mainCtrl'
-    })
-    .when('/cart', {
-      templateUrl:'views/cart.html',
-      controller: 'CartController as cartCtrl'
     })
     .otherwise ({
       redirectTo: '/not_found'

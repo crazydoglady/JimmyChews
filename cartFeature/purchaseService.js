@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  angular.module('pawsApp') //parent element, all of application is affected
+  angular.module('cart') //parent element, all of application is affected
   .factory('PurchaseService', function() {
     var purchases = [];
 
@@ -17,7 +17,6 @@
      var idx = purchases.indexOf(index); //angular tracks index automatically
        purchases.splice(index, 1);
     }
-
     return {
     //public  : private
       getItems: getPurchases,

@@ -1,0 +1,144 @@
+/* \$font:'IM Fell Double Pica', serif;
+\$teal: #2a4f4f;
+\$ltgreen: #627060;
+\$green: #576755;
+\$tan: #c1a590;
+\$dusty: #d0ad93;
+\$red: #d51222;
+\$grey: #575556; */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/paws2.jpg"); }
+
+header {
+  height: 125px;
+  background: #d3ab0a;
+  border-bottom: 5px solid grey; }
+
+#brand {
+  text-align: center; }
+
+h2 {
+  font-size: 60px;
+  margin: 50px 0 0 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: black; }
+
+a, .fa-paw {
+  text-decoration: none;
+  color: black; }
+  a:hover, .fa-paw:hover {
+    color: #d3ab0a;
+    text-shadow: 1px black; }
+
+h3 {
+  text-align: left;
+  margin: 0 5% 0 0;
+  padding: 0 20px 0 0;
+  display: inline-block; }
+
+h4 {
+  color: black;
+  text-align: center;
+  font-family: helvetica; }
+
+.photoscroll {
+  display: block;
+  /*   min-height: 5em; */
+  height: 35em;
+  margin: 1% 25% 1% 25%;
+  background-size: cover;
+  background-height: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: gallery 72s 1s infinite;
+  -moz-animation: gallery 72s 1s infinite;
+  -o-animation: gallery 72s 1s infinite;
+  animation: gallery 72s 1s infinite; }
+
+.redirect {
+  height: 45px;
+  background: black;
+  color: white; }
+  .redirect h3 {
+    margin: 0 0 0 19%; }
+  .redirect a, .redirect .fa-paw {
+    padding: 5% 0 0 0;
+    color: white; }
+    .redirect a:hover, .redirect .fa-paw:hover {
+      color: #d3ab0a; }
+
+ul {
+  list-style-type: none; }
+  ul li, ul form input, form ul input {
+    background: grey;
+    display: inline-block;
+    margin: 1% 0 0 12%;
+    border-radius: 10px; }
+    ul li img, ul form input img, form ul input img {
+      height: 160px;
+      width: 100%;
+      margin: 3% 0 0 0;
+      border-radius: 10px; }
+
+form input {
+  width: 80%; }
+
+.listingInfo {
+  height: 20px; }
+
+#lost {
+  height: 500px; }
+
+#error {
+  margin: 0 0 0 39%; }
+
+.bottom {
+  margin-top: 150px;
+  background: grey; }
+  .bottom a, .bottom .fa-paw {
+    margin: 0 0 0 20%; }
+
+.fa-times {
+  color: red; }
+
+.fa-pencil {
+  color: blue; }
+
+.addNew {
+  background: green; }
+
+.client {
+  border: 1px solid blue; }
+  .client img {
+    height: 350px; }
+
+@-webkit-keyframes gallery {
+  0% {
+    background-image: url("assets/happy.jpg"); }
+  10% {
+    background-image: url("assets/timid.jpg"); }
+  20% {
+    background-image: url("assets/saddog.jpg"); }
+  30% {
+    background-image: url("assets/frenchie.jpg"); }
+  40% {
+    background-image: url("assets/curious.jpg"); }
+  50% {
+    background-image: url("assets/fluffy.jpeg"); }
+  60% {
+    background-image: url("assets/happypittie.jpg"); }
+  70% {
+    background-image: url("assets/smile.jpg"); }
+  80% {
+    background-image: url("assets/kingcharles.jpg"); }
+  90% {
+    background-image: url("assets/lab.jpg"); }
+  95% {
+    background-image: url("assets/pug.jpg"); }
+  100% {
+    background-image: url("assets/happy.jpg"); } }
+
+/*# sourceMappingURL=styles.css.map */
