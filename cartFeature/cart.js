@@ -15,9 +15,7 @@ angular.module('cart', [
     templateUrl: 'views/not_found.html',
     controller: 'MainController as mainCtrl'
   })
-  .otherwise ({
-    redirectTo: '/not_found'
-  })//end otherwise, this is equivalent to if/else statement in vanilla javascript
+
 });//end config
 
 })();

@@ -9,7 +9,7 @@
       return purchases; //returns array
      }
      var addPurchase = function (item) {
-       console.log("purchase service add purchase")
+      console.log("add purchase")
       purchases.push(item); //adds new item info to array of products^^
       console.log("item purchased", item, purchases.length)
     }

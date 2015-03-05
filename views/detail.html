@@ -1,10 +1,14 @@
 <h3>Product Details</h3>
-<div></div>
-<img ng-src="{{product.photo}}">
-<p class="listingInfo"><h2>{{product.name}}</h2></p>
-<p class="listingInfo"><h4>{{product.category}}</h4></p>
-<p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
-
+<div class="col-md-6 prodDetail">
+  <div class="col-md-8">
+    <img ng-src="{{mainCtrl.singleItem.photo}}">
+    <p class="listingInfo"><h2>{{mainCtrl.singleItem.name}}</h2></p>
+    <p class="listingInfo"><h4>{{mainCtrl.singleItem.description}}</h4></p>
+    <p class="listingInfo"><h4>{{mainCtrl.singleItem.price | currency}}</h4></p>
+  </div>
+  <div class="col-md-3" ng-controller="commentsCtrl as comCtrl">
+    Review display goes here
+  </div>
 
 <button ng-click="addComment"><i class="fa fa-star-half-o"></i>ADD REVIEW</button>
 </div>

@@ -4,6 +4,7 @@
   angular.module('pawsApp', [
     'ngRoute',
     'cart'
+    //'comments'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -15,15 +16,19 @@
       templateUrl: 'views/shop.html',
       controller: 'MainController as mainCtrl'
     })
+    // .when('/shop', {
+    //   templateUrl: 'views/shop.html',
+    //   controller: 'Controller as mainCtrl'
+    // })
     .when('/admin', {
       templateUrl: 'views/admin.html',
       controller: 'MainController as mainCtrl'
     })//end / admin route
-    .when('/detail/:_id', {
+    .when('/detail/:itemId', {
       templateUrl: 'views/detail.html',
       controller: 'MainController as mainCtrl'
     })
-    .when('/edit/:_id', {
+    .when('/edit/:itemId', {
       templateUrl: 'views/edit.html',
       controller: 'MainController as mainCtrl'
     })

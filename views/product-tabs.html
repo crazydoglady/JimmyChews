@@ -1,0 +1,12 @@
+<li ng-class="{active:tab === 1}"class="col-md-4" ng-show="panels.isSelected(1)">
+  <a><h6>OVERVIEW</h6></a>
+  <img ng-src="{{product.photo}}">
+  <p><h4>{{product.name}}</h4></p>
+  <p><h4>{{product.category}}</h4></p>
+  <p><h4>{{product.price | currency}}</h4></p>
+<li ng-class="{active:tab === 2}"class="col-md-4" ng-show="panels.isSelected(2)">
+  <a><h6>DETAILS</h6></a>
+  </li><!-- href="#/detail/{{product._id}}" -->
+<li class="col-md-4" ng-class="{active:tab ===3}" ng-show="panels.isSelected(3)">
+  <a ng-click="cart.addPurchase(product)"><h6>ADD <i class="fa fa-cart-plus"></i></h6></a>
+  </li>

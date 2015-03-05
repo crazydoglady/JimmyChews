@@ -124,13 +124,15 @@
     //
     //    products.splice(this, 1, item)
   var getSingleItem = function (id) {
+    console.log(id);
+    console.log(url +'/' + id);
     return $http.get(url + '/' + id);
     //return products[index];
     //console.log("in services");
   };
-  var editItem = function (id) {
-    console.log("edit start");
-    $http.put(url + '/'+ id);
+  var editItem = function (item, id) {
+    console.log();
+    $http.put(url + '/' + id, item);
     // var idx = products.indexOf(item);
     // console.log(item);
     // console.log(products[idx]);

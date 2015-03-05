@@ -5,10 +5,15 @@
       var mainCtrl = this;
 
       ProductService.getItems().success(function(data){
+        //console.log(data);
         mainCtrl.products = data;
       });
       ProductService.getItem($routeParams.itemId).success(function(data){
+        //console.log("This is what we pass in:" + $routeParams.itemId);
         mainCtrl.singleItem = data;
+        //console.log("This is what we get back:" + data);
+        //console.log(data);
+        //console.log($routeParams.itemId);
       });
 
       // ProductService.getItem();

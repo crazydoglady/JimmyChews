@@ -72,17 +72,16 @@ h4 {
       color: #d3ab0a; }
 
 ul {
-  list-style-type: none; }
-  ul li, ul form input, form ul input {
-    background: #e5e4e0;
-    display: inline-block;
-    margin: 1% 0 0 3%;
+  list-style-type: none;
+  background: #e5e4e0;
+  display: inline-block;
+  margin: 1% 0 0 3%;
+  border-radius: 10px; }
+  ul li img, ul form input img, form ul input img {
+    height: 160px;
+    width: 100%;
+    margin: 3% 0 0 0;
     border-radius: 10px; }
-    ul li img, ul form input img, form ul input img {
-      height: 160px;
-      width: 100%;
-      margin: 3% 0 0 0;
-      border-radius: 10px; }
 
 form input {
   width: 80%; }
