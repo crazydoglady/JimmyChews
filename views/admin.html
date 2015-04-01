@@ -1,6 +1,6 @@
 
 <ul class="col-md-12">
-  <li ng-repeat="product in mainCtrl.products" class="col-md-2">
+  <li ng-repeat="product in mainCtrl.products" class="col-lg-2 col-md-3 col-sm-4">
     <img ng-src="{{product.photo}}">
     <h4>{{product.name}}</h4>
     <h4>{{product.category}}</h4>
@@ -9,7 +9,7 @@
     <button ng-click="mainCtrl.deleteProduct(product._id)"><i class="fa fa-times"></i>Delete</button>
 
 </li>
-<li class="col-md-2 addNew">
+<li class="col-lg-2 col-md-3 col-sm-5 addNew">
 <button ng-click="new =!new"><i class="fa fa-plus"></i>Add New</button>
 <form ng-show="new" ng-submit="mainCtrl.addProduct(newProduct)">
   <input type="url" ng-model="newProduct.photo" placeholder="Photo url">

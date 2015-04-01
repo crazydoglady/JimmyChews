@@ -88,7 +88,6 @@ h4 {
 }
 ul{
     list-style-type: none;
-    background: #e5e4e0;
     display: inline-block;
     margin: 1% 0 0 3%;
     border-radius: 10px;
@@ -100,6 +99,12 @@ ul{
     border-radius: 10px;
   }}
   }
+
+.listings {
+  background: #e5e4e0;
+  border-radius: 10px;
+  margin: 1%;
+}
 
 form {
   input {

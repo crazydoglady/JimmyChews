@@ -29,7 +29,7 @@
        };
        mainCtrl.editItem = function (item) {
          ProductService.editProduct(item, $routeParams.itemId);
-         $location.path('/admin')
+         $location.path('/admin');
        }
       // mainCtrl.editProduct = function (product) {
       // ProductService.editItem(product)

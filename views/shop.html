@@ -4,37 +4,16 @@
 <h3><a href="#/admin"><i class="fa fa-unlock"></i>  ADMIN</a></h3>
 </nav>
 
-<section ng-controller="CartController as cart" class="col-md-12">
-<ul ng-repeat="product in mainCtrl.products" class="col-md-2">
-  <li class="nav nav-pills" ng-class="{ active: panel.isSelected(1)}">
-    <a href ng-click="panel.selectpanel(1)"><h6>Item</h6></a>
-      <img ng-src="{{product.photo}}">
-      <p><h4>{{product.name}}</h4></p>
-    </li>
-  <li class="nav nav-pills" ng-class="{ active: panel.isSelected(2)}">
-    <a href ng-click="panel.selectpanel(2)"><h6>Details</h6></a>
-    </li><!-- href="#/detail/{{product._id}}" -->
-    <li class="nav nav-pills" ng-class="{ active: panel.isSelected(3)}">
-      <a href ng-click="panel.selectpanel(3)"><h6>Reviews</h6></a>
-      </li>
-  <li class="nav nav-pills">
-    <a ng-click="cart.addPurchase(product)"><h6>Buy <i class="fa fa-cart-plus"></i></h6></a>
-    </li>
-
-    <div class="panel" ng-show="panel.isSelected(1)">
-      <img ng-src="{{product.photo}}">
-      <p><h4>{{product.name}}</h4></p>
-      <!-- <p><h4>{{product.category}}</h4></p> -->
-    </div>
-    <div class="panel" ng-show="panel.isSelected(2)">
-      <p><h4>{{product.description}}</h4></p>
-      <p><h4>{{product.price | currency}}</h4></p>
-    </div>
-    <div class="panel" ng-show="panel.isSelected(3)">
-      <p><h4>{{Reviews}}</h4></p>
-    </div>
+<ul class="col-lg-10 col-md-10 col-sm-10 " ng-controller="CartController as cart">
+  <li ng-repeat="product in mainCtrl.products" class="listings col-md-2 col-sm-2">
+    <img ng-src="{{product.photo}}">
+    <p class="listingInfo"><h4>{{product.name}}</h4></p>
+    <p class="listingInfo"><h4>{{product.category}}</h4></p>
+    <p class="listingInfo"><h4>{{product.price | currency}}</h4></p>
+    <button><a href="#/detail/{{product._id}}"><i class="fa fa-chevron-right"></i>DETAILS</button>
+    <button><a href="#/cart" ng-click="cart.addPurchase(product)"><i class="fa fa-shopping-cart"></i>  ADD TO CART</a></button>
+  </li>
 </ul>
-</section>
 
   <!-- panelS NOT WORKING -->
   <!--
